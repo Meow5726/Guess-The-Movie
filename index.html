@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess-the-movie-game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wel">
+        <h1 align="center">- WELCOME TO GUESS THE MOVIE GAME -</h1>
+        <ol>
+            <h2>INSTRUCTIONS!</h2>
+            <li>There will be 3 hints for each guess.</li>
+            <li>You can do your assumptions and pick the choice accordingly.</li>
+            <li>For each guess you will get only one chance to pick your choice.</li>
+            <li>There will be 10 total movies which you have to guess.</li>
+            <li>For each correct guess you will get 1 point and for incorrect one you will not get any point.</li>
+            <li>To win you must score greater than equals to 3, otherwise you'll lose.</li>
+        </ol>
+        <p id="wish" align="center">HOPE, YOU GET IT CORRECTLY! BEST WISHES:)</p>
+        <button id="btn">START GAME</button>
+    </div>
+    <div id="main" align="center">
+        <h2 align="center" id="g">GUESS THE MOVIE</h2>
+        <div id="score">
+            <h3 id="sc">0</h3>
+            <h3>Your Score</h3>
+        </div>
+        <h3>HINTS</h3>
+        <p id="clue"></p>
+        <div class="hints">
+            <button class="b" id="btn1" align="center"></button>
+            <button class="b" id="btn2" align="center"></button>
+            <button class="b" id="btn3" align="center"></button>
+        </div>
+        <div id="next">
+            <button  id="reset">RESET GAME</button>
+        </div>
+    </div>
+    <p id="msg"></p>
+    <script src="app.js"></script>
+</body>
+</html>
