@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050a12">
+    <meta name="description" content="Test your movie knowledge in Guess the Movie, a cinematic quiz featuring movie clues, multiple-choice questions, and score tracking.">
+    <title>Guess the Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="background-video" class="background-video" muted loop autoplay playsinline preload="auto" aria-hidden="true">
+        <source src="assets/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="vignette-overlay"></div>
+    <div class="grain-overlay"></div>
+    <div class="container">
+        <section id="wel" class="card fade-in">
+            <h1>🎬 GUESS THE MOVIE 🎬</h1>
+            <div class="instructions-box">
+                <h2>Director's Notes (Instructions)</h2>
+                <ol>
+                    <li>Each movie comes with four clues.</li>
+                    <li>Read the hints and choose the correct movie.</li>
+                    <li>You get only one attempt per question.</li>
+                    <li>There are 9 movies to guess.</li>
+                    <li>Each correct answer earns 1 point.</li>
+                    <li>Score at least 3 points to win.</li>
+                </ol>
+            </div>
+            <p id="wish">✨ Hope you get it correctly! Best wishes ✨</p>
+            <button id="btn" class="action-btn primary-btn">START GAME</button>
+        </section>
+        <section id="main" class="main-game hide">
+            <div class="header-section">
+                <h2 id="g">🎞️ GUESS THE MOVIE</h2>
+                <div id="score" class="score-board" aria-live="polite">
+                    <h3 id="sc">0</h3>
+                    <h3>Your Score</h3>
+                </div>
+            </div>
+            <div class="hints-section">
+                <h3 class="clue-header">TOP SECRET HINTS</h3>
+                <div class="clue-box">
+                    <p id="clue"></p>
+                </div>
+            </div>
+            <div class="hints options-container">
+                <button class="b option-btn" id="btn1"></button>
+                <button class="b option-btn" id="btn2"></button>
+                <button class="b option-btn" id="btn3"></button>
+            </div>
+            <div id="next" class="footer-actions">
+                <button id="reset" class="action-btn secondary-btn">RESET GAME</button>
+            </div>
+        </section>
+    </div>
+    <div id="msg" class="hide" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+</body>
+</html>
